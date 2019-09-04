@@ -1,3 +1,5 @@
-1. Create new Git repository.
-1a. Ensure the .gitignore file works correctly
-2. Learn how the "require" function works
+1. (DONE) Create new Git repository.
+1a. (DONE) Ensure the .gitignore file works correctly
+2. (DONE) Learn how the "require" function works
+3. Load Player Ship with movement and shooting animations.
+
