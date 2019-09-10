@@ -1,5 +1,8 @@
 1. (DONE) Create new Git repository.
 1a. (DONE) Ensure the .gitignore file works correctly
 2. (DONE) Learn how the "require" function works
-3. Load Player Ship with movement and shooting animations.
+3. (DONE) Load Player Ship with movement and shooting animations.
+4. Add BG Image (Scrolling)
+5. Add Enemies
+
 
