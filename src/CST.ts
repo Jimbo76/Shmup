@@ -7,5 +7,9 @@ export const CST: any = {
     LASER: {
         SPEED: -400,
         INTERVAL: 500
+    },
+    BULLET: {
+        SPEED: 400,
+        INTERVAL: 500
     }
 }

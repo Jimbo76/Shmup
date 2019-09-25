@@ -2,7 +2,12 @@
 1a. (DONE) Ensure the .gitignore file works correctly
 2. (DONE) Learn how the "require" function works
 3. (DONE) Load Player Ship with movement and shooting animations.
-4. Add BG Image (Scrolling)
-5. Add Enemies
+-- COMMIT
+4. (DONE) Add BG Image (Scrolling)
+5. (DONE) Add Enemies.  
+5a. (DONE) Add enemy movement.
+5b. (DONE) Add enemy animation.
+5c. (DONE) Add fire ability for enemy.
+-- COMMIT
 
 

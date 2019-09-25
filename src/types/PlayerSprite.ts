@@ -48,6 +48,7 @@ export class PlayerSprite extends Phaser.Physics.Arcade.Sprite {
       }),
       frameRate: 10
     });
+
     this.scene.anims.create({
       key: 'flyRight',
       frames: this.scene.anims.generateFrameNumbers('player', {
@@ -57,15 +58,27 @@ export class PlayerSprite extends Phaser.Physics.Arcade.Sprite {
       }),
       frameRate: 10
     });
+
+    this.scene.anims.create({
+      key: 'flyIdle',
+      frames: this.scene.anims.generateFrameNumbers('player', {
+        frames: [2, 2, 7, 7]
+      }),
+      frameRate: 20,
+      repeat: -1
+    });
+
     this.scene.anims.create({
       key: 'fire',
       frames: this.scene.anims.generateFrameNumbers('lasers', {
-        start: 2,
-        end: 3
+        frames: [2, 2, 3, 3]
       }),
       repeat: -1,
-      frameRate: 10
+      frameRate: 20
     });
+
+    this.playFlyIdle();
+    this.on('animationcomplete', this.playFlyIdle);
   }
 
   update(time: number, delta: number) {
@@ -105,5 +118,9 @@ export class PlayerSprite extends Phaser.Physics.Arcade.Sprite {
 
       this.laserGate = time + CST.LASER.INTERVAL;
     }
+  }
+
+  playFlyIdle() {
+    this.anims.play('flyIdle');
   }
 }

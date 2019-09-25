@@ -7,8 +7,8 @@ import { PlayScene } from './scenes/PlayScene';
 // import { CST } from './CST';
 
 let game = new Phaser.Game({
-  width: 800,
-  height: 640,
+  width: 512,
+  height: 544,
   scene: [LoadScene, PlayScene],
   physics: {
     default: 'arcade',
